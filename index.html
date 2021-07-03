@@ -9,13 +9,15 @@
     <title>iJCode - Video Player</title>
 </head>
 <body>
-    <main>
-        <button class="button" id="backward"></button>
-        <button class="button" id="play"></button>
-        <button class="button" hidden id="pause"></button>
-        <button class="button" id="forward"></button>
-        <video controls id="video" poster="./assets/images/poster.jpg" muted src="./assets/videos/lofi.mp4" width="400px"></video>
-    </main>
+    <div class="wrapper">
+        <main class="video">
+            <button aria-label="Regresar 10 segundos" class="button" id="backward" title="Regresar 10 segundos"></button>
+            <button aria-label="Reproducir el video" class="button" id="play" title="Reproducir el video"></button>
+            <button aria-label="Pausar el video" class="button" hidden id="pause" title="Pausar el video"></button>
+            <button aria-label="Avanzar 10 segundos" class="button" id="forward" title="Avanzar 10 segundos"></button>
+            <video aria-label="Video de la pagina" controls id="video" poster="./assets/images/poster.jpg" muted src="./assets/videos/lofi.mp4" width="400px"></video>
+        </main>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>

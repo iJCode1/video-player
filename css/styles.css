@@ -6,4 +6,14 @@
 
 body{
     background: var(--green);
+    margin: 0;
+}
+
+.wrapper{
+    max-inline-size: 900px;
+    margin: 0 auto;
+}
+
+.video video{
+    inline-size: 100%;
 }
