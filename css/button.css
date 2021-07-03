@@ -5,7 +5,12 @@
     background-repeat: no-repeat;
     background-position: center;
     block-size: 30px;
+    cursor: pointer;
     inline-size: 30px;
+}
+
+.button:active{
+    transform: scale(.9);
 }
 
 .button:nth-child(1){
@@ -16,7 +21,6 @@
 }
 .button:nth-child(3){
     background-image: url("../assets/images/pause.svg");
-    display: none;
 }
 .button:nth-child(4){
     background-image: url("../assets/images/+10.svg");

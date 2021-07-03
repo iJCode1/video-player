@@ -5,7 +5,6 @@
     <meta name="description" content="Video Player es un reproductor de video que se hizo como proyecto en el curso de introduccion al desarrollo web en la plataforma de Leonidasesteban.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="script" href="./js/index.js">
     <link rel="shortcut icon" href="./assets/images/js.png" type="image/x-icon">
     <title>iJCode - Video Player</title>
 </head>
@@ -13,9 +12,9 @@
     <main>
         <button class="button" id="backward"></button>
         <button class="button" id="play"></button>
-        <button class="button" id="pause"></button>
+        <button class="button" hidden id="pause"></button>
         <button class="button" id="forward"></button>
-        <video autoplay controls poster="./assets/images/poster.jpg" muted src="./assets/videos/lofi.mp4" width="400px"></video>
+        <video controls id="video" poster="./assets/images/poster.jpg" muted src="./assets/videos/lofi.mp4" width="400px"></video>
     </main>
     <script src="./js/index.js"></script>
 </body>
