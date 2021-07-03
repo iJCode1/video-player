@@ -22,6 +22,7 @@ body{
 .video video{
     aspect-ratio: 16/9;
     inline-size: 100%;
+    object-fit: cover;
     vertical-align: middle;
 }
 
@@ -58,4 +59,15 @@ body{
 
 .video-range input{
     flex: 1;
+}
+
+.video-overlay{
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    transition: .5s opacity;
+}
+
+.video:hover .video-overlay{
+    opacity: 1;
 }
