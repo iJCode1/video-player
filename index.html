@@ -10,13 +10,19 @@
 </head>
 <body>
     <div class="wrapper">
-        <main class="video">
-            <button aria-label="Regresar 10 segundos" class="button" id="backward" title="Regresar 10 segundos"></button>
-            <button aria-label="Reproducir el video" class="button" id="play" title="Reproducir el video"></button>
-            <button aria-label="Pausar el video" class="button" hidden id="pause" title="Pausar el video"></button>
-            <button aria-label="Avanzar 10 segundos" class="button" id="forward" title="Avanzar 10 segundos"></button>
-            <video aria-label="Video de la pagina" controls id="video" poster="./assets/images/poster.jpg" src="./assets/videos/lofi.mp4" width="400px"></video>
-        </main>
+        <div class="video">
+            <video aria-label="Video de la pagina" id="video" poster="./assets/images/poster.jpg" src="./assets/videos/lofi.mp4" width="400px"></video>
+            <h2 class="video-title">Musica para Programar</h2>
+            <div class="video-actions">
+                <button aria-label="Regresar 10 segundos" class="button" id="backward" title="Regresar 10 segundos"></button>
+                <button aria-label="Reproducir el video" class="button" id="play" title="Reproducir el video"></button>
+                <button aria-label="Pausar el video" class="button" hidden id="pause" title="Pausar el video"></button>
+                <button aria-label="Avanzar 10 segundos" class="button" id="forward" title="Avanzar 10 segundos"></button>
+            </div>
+            <div class="video-range">
+                <input type="range">
+            </div>
+        </div>
     </div>
     <script src="./js/index.js"></script>
 </body>
