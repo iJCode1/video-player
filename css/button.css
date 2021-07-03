@@ -1,0 +1,23 @@
+.button{
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: 30px;
+    inline-size: 30px;
+}
+
+.button:nth-child(1){
+    background-image: url("../assets/images/-10.svg");
+}
+.button:nth-child(2){
+    background-image: url("../assets/images/play.svg");
+}
+.button:nth-child(3){
+    background-image: url("../assets/images/pause.svg");
+    display: none;
+}
+.button:nth-child(4){
+    background-image: url("../assets/images/+10.svg");
+}
